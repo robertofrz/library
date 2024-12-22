@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelf Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" type="image/png" />
+  </head>
+  <body>
+    <aside>
+      <form id="add-book">
+        <h2>Add a new book <br />to your library</h2>
+        <label for="title-book"
+          >Title:<input id="title-book" type="text" required
+        /></label>
+        <label for="author-book"
+          >Author:<input id="author-book" type="text" required
+        /></label>
+        <label for="pages-book"
+          >Pages:<input id="pages-book" type="number" name="" required
+        /></label>
+        <select name="read-or-not" id="read-or-not" required>
+          <option value="">Have you read it?</option>
+          <option value="Read">Yes, I did!</option>
+          <option value="Not Read">No, not yet.</option>
+        </select>
+        <button type="button" id="add-button">Add Book</button>
+      </form>
+    </aside>
+    <div id="main">
+      <div id="welcome">
+        <h1>Welcome to Shelf Space</h1>
+        <p>
+          With Shelf Space, you can easily add books you have read to reflect on
+          your literary adventures and add new books of stories that await you.
+          Track your progress, discover new favorites, and curate your own
+          virtual library—all in one cozy, user-friendly space.
+        </p>
+      </div>
+      <div id="library">
+        <div id="books-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table"></tbody>
+          </table>
+        </div>
+        <div id="book-shelf">
+          <div class="shelf-1">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+          </div>
+          <div class="shelf-2">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+          </div>
+          <div class="shelf-3">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

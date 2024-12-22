@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0;
+  height: 100vh;
+  max-width: 100vw;
+  font-family: "Andika", serif;
+}
+#add-book {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #10451d;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+}
+#main {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(232, 255, 227);
+  height: 100%;
+  font-weight: 500;
+}
+#welcome {
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+#library {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#book-shelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25vw;
+  height: 60vh;
+  background-color: #250902;
+  margin: auto;
+  align-items: center;
+  border-radius: 1%;
+  margin-bottom: 1rem;
+}
+.shelf-1,
+.shelf-3,
+.shelf-2 {
+  width: 90%;
+  height: 25%;
+  background-color: #78290f;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border: 2px solid rgb(24, 7, 7);
+  border-radius: 1%;
+}
+.shelf-2 {
+  justify-content: flex-end;
+}
+
+.book {
+  width: 8%;
+  height: 90%;
+  background-color: #10451d;
+  border: 1px solid;
+  display: none;
+  border-radius: 7%;
+}
+
+#books-list {
+  align-self: flex-start;
+  width: 50%;
+  margin-left: 5rem;
+  margin-right: -8rem;
+}
+.remove-btn {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(221, 4, 4);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 1.1rem;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 2rem 0;
+  font-size: 0.9rem;
+  margin-left: -2rem;
+}
+tr {
+  border-bottom: 0.1rem solid #10451d;
+}
+th {
+  color: #10451d;
+  font-size: 1.1rem;
+}
+th,
+td {
+  padding-block: 0.8rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+#add-button {
+  width: 5rem;
+  height: 2rem;
+  background-color: white;
+  color: #10451d;
+  font-weight: bolder;
+  margin: 0 auto 0 auto;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  font-family: "Andika";
+}
+h1 {
+  color: #10451d;
+  margin-bottom: -0.8rem;
+}
+label {
+  width: 11rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+input {
+  flex: 1;
+  padding: 0.2rem;
+  text-align: center;
+  display: inline;
+}
+#read-or-not {
+  padding: 0.2rem;
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+  }
+  #library {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #book-shelf {
+    width: 50vw;
+    height: 30vh;
+  }
+  #books-list {
+    margin: 0 auto 0 auto;
+  }
+  #add-book {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 1rem;
+  }
+  #main,
+  #welcome {
+    width: 100vw;
+  }
+
+  table {
+    margin-left: -5rem;
+  }
+}
