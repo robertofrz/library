@@ -10,6 +10,7 @@
   <body>
     <aside>
       <form id="add-book">
+        <h1 id="brand">Shelf Space</h1>
         <h2>Add a new book <br />to your library</h2>
         <label for="title-book"
           >Title:<input id="title-book" type="text" required
@@ -20,11 +21,17 @@
         <label for="pages-book"
           >Pages:<input id="pages-book" type="number" name="" required
         /></label>
-        <select name="read-or-not" id="read-or-not" required>
-          <option value="">Have you read it?</option>
-          <option value="Read">Yes, I did!</option>
-          <option value="Not Read">No, not yet.</option>
-        </select>
+        <label for="read-or-not"
+          >Have you read it?<select
+            name="read-or-not"
+            id="read-or-not"
+            required
+          >
+            <option value="">Choose one option...</option>
+            <option value="Read">Yes, I did!</option>
+            <option value="Not Read">No, not yet.</option>
+          </select></label
+        >
         <button type="button" id="add-button">Add Book</button>
       </form>
     </aside>
@@ -57,7 +64,6 @@
           <div class="shelf-1">
             <div class="book"></div>
             <div class="book"></div>
-            <div class="book"></div>
           </div>
           <div class="shelf-2">
             <div class="book"></div>
@@ -65,6 +71,8 @@
             <div class="book"></div>
           </div>
           <div class="shelf-3">
+            <div class="book"></div>
+            <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
